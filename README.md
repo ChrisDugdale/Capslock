@@ -8,6 +8,8 @@
 
 ------------------------
 
+# This is my fork of CapsLock by https://github.com/Vonng/Capslock#control-planes , i like diffeent cursor keys, amongst other little bits, much thanks him for this!
+
 ## CapsLock Enhancement Mac v3
 
 *Transform <kbd>⇪</kbd>CapsLock into a powerful **modifier** **<kbd>✱</kbd> Hyper** that miraculously increases your work productivity!*
