@@ -8,7 +8,7 @@
 
 ------------------------
 
-# This is my fork of CapsLock by https://github.com/Vonng/Capslock#control-planes , i like diffeent cursor keys, amongst other little bits, much thanks him for this!
+## This is my fork of CapsLock by https://github.com/Vonng/Capslock#control-planes , I like diffeent cursor keys, amongst other little bits, many thanks to him for this!
 
 ## CapsLock Enhancement Mac v3
 
