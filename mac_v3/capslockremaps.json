@@ -19,9 +19,9 @@
           "description": "remap @ symbol to double quote",
           "type": "basic",
           "from": {
-            "key_code": 2,
+            "key_code": "2",
             "modifiers": {
-              "madatory": [
+              "mandatory": [
                 "left_shift"
               ]
             }
@@ -30,7 +30,7 @@
             {
               "key_code": "quote",
               "modifiers": [
-                "right_shift"
+                "left_shift"
               ]
             }
           ]
@@ -41,16 +41,16 @@
           "from": {
             "key_code": "quote",
             "modifiers": {
-              "madatory": [
+              "mandatory": [
                 "left_shift"
               ]
             }
           },
           "to": [
             {
-              "key_code": 2,
+              "key_code": "2",
               "modifiers": [
-                "right_shift"
+                "left_shift"
               ]
             }
           ]
