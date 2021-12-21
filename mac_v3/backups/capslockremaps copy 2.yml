@@ -31,17 +31,11 @@ rules:
   ################################################################
   - description: CapsLock to Hyper
     manipulators:
-      - description: "capslock = esc(click) | hyper(hold)"
-        type: basic
-        from: { key_code: caps_lock, modifiers: { optional: [any] } }
-        to:
-          [
-            {
-              key_code: right_shift,
-              modifiers: [right_command, right_control, right_option],
-            },
-          ]
-        to_if_alone: [{ key_code: escape }]
+      # - description: 'capslock = esc(click) | hyper(hold)'
+      #   type: basic
+      #   from: { key_code: caps_lock ,modifiers: { optional: [ any ] } }
+      #   to: [ { key_code: right_shift,modifiers: [ right_command,right_control,right_option ] } ]
+      #   to_if_alone: [ { key_code: escape } ]
 
       - description: "escape = capslock switch"
         type: basic
@@ -70,24 +64,24 @@ rules:
           }
         to: [{ key_code: spacebar, modifiers: [left_control] }]
 
-      # - description: "command + spacebar = emoji"
-      #   type: basic
-      #   from:
-      #     {
-      #       key_code: spacebar,
-      #       modifiers:
-      #         {
-      #           mandatory:
-      #             [
-      #               left_command,
-      #               right_command,
-      #               right_control,
-      #               right_shift,
-      #               right_option,
-      #             ],
-      #         },
-      #     }
-      #   to: [{ key_code: spacebar, modifiers: [left_control, left_command] }]
+      - description: "command + spacebar = emoji"
+        type: basic
+        from:
+          {
+            key_code: spacebar,
+            modifiers:
+              {
+                mandatory:
+                  [
+                    left_command,
+                    right_command,
+                    right_control,
+                    right_shift,
+                    right_option,
+                  ],
+              },
+          }
+        to: [{ key_code: spacebar, modifiers: [left_control, left_command] }]
 
   ################################################################
   #                       Hyper Navigation                       #
@@ -274,12 +268,6 @@ rules:
               },
           }
         to: [{ key_code: left_arrow }]
-
-      # normal: cursor move
-      - description: "right command + j = close bracket"
-        type: basic
-        from: { key_code: j, modifiers: { mandatory: [right_command] } }
-        to: [{ key_code: "9", modifiers: [left_shift] }]
 
       #==========================================================#
       # ( k ) + ( ⌘⌥⇧⌃ )  -> ( down )                            #
@@ -3939,7 +3927,6 @@ rules:
         from:
           {
             key_code: r,
-        to_if_alone: [ { key_code: escape } ]
             modifiers:
               {
                 mandatory:
@@ -4791,8 +4778,7 @@ rules:
 
   ################################################################
   #                        Hyper Shifter                         #
-  ####################################
-  ############################
+  ################################################################
   - description: Hyper Shifter
     manipulators:
       #==========================================================#

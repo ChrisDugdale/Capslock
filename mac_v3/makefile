@@ -1,3 +1,8 @@
+cd:
+	yq eval capslockdev.yml -j > capslockdev.json
+	mkdir -p $$HOME/.config/karabiner/assets/complex_modifications/
+	cp capslockdev.json $$HOME/.config/karabiner/assets/complex_modifications/
+
 compile:
 	yq eval capslockremaps.yml -j > capslockremaps.json
 
@@ -9,4 +14,4 @@ all:
 	mkdir -p $$HOME/.config/karabiner/
 	cp karabiner.json $$HOME/.config/karabiner/
 
-.PHONY: compile,install,all
+.PHONY: cd,compile,install,all
