@@ -1260,7 +1260,7 @@ rules:
                   [right_command, right_control, right_shift, right_option],
               },
           }
-        to: [{ key_code: home }]
+        to: [{ key_code: a, modifiers: [left_control] }]
 
       #==========================================================#
       # ( o ) + ( ⌘⌥⇧⌃ )  -> ( PageUp )                          #
