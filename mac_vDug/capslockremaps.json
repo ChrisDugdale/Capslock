@@ -296,7 +296,7 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "escape"
+              "key_code": "right_control"
             }
           ]
         },
@@ -1654,7 +1654,10 @@
           },
           "to": [
             {
-              "key_code": "home"
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_command"
+              ]
             }
           ]
         },
@@ -1866,9 +1869,9 @@
           },
           "to": [
             {
-              "key_code": "e",
+              "key_code": "right_arrow",
               "modifiers": [
-                "left_control"
+                "left_command"
               ]
             }
           ]
